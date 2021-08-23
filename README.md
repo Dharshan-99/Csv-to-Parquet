@@ -68,7 +68,28 @@ Closing the Parquet Writer
 parquet_writer.close()
 ```
 
-After executing the above code...The Parquet file is created named _""_
+After executing the above code...The Parquet file is created named _"sample.parquet"_ in our directory.
+
+### File sizes:-
+| Sample.csv  | sampleparquet |
+| ------------- | ------------- |
+| 109 MB | 15.7 MB  |
+
+_NOTE: Here I taken small size csv file(sample file).We may use any size of file_
+
+The above shows the difference between the cvs and Parquet file.
+
+### Reading Parquet File using Pandas:-
+```
+import pandas as pd
+import pyarrow as pa
+import pyarrow.parquet as pq
+table=pd.read_parquet('filename.parquet', engine='pyarrow')
+table
+```
+
+
+In this Tutorial we learn about Parquet file and how to convert csv to Parquet file.
 
 
 
