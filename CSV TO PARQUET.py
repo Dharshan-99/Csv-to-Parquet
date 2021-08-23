@@ -3,7 +3,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 csv_file = 'sample.csv'
-parquet_file = 'my1.parquet'
+parquet_file = 'sample.parquet'
 chunksize = 100_000
 
 csv_file = pd.read_csv(csv_file, sep='\t', chunksize=chunksize, low_memory=False)
