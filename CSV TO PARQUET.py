@@ -2,7 +2,7 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-csv_file = 'sample parquet 1.csv'
+csv_file = 'sample.csv'
 parquet_file = 'my1.parquet'
 chunksize = 100_000
 
